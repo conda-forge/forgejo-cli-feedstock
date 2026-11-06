@@ -10,7 +10,7 @@ source:
   sha256: 748ce60eb18e72af83ef3956910933b1e091abf673f12ff9777aea214f6eae40
 
 build:
-  number: 0
+  number: 1
   script:
     env:
       CARGO_PROFILE_RELEASE_STRIP: symbols
@@ -46,7 +46,7 @@ requirements:
     - ${{ compiler('rust') }}
     - cargo-bundle-licenses
     - cargo-auditable
-    - pkg-config
+    - pkgconf
   host:
     - libgit2
     - libssh2
